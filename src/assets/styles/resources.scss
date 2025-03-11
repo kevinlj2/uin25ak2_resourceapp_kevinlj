@@ -1,0 +1,17 @@
+main {
+  display: flex;
+  justify-content: left;
+  background-color: var(--white);
+  padding: 50px;
+  width: 950px;
+  height: 250px;
+
+  h3 {
+    color: var(--violet);
+    font-size: 28px;
+  }
+
+  a {
+    color: var(--blue);
+  }
+}
