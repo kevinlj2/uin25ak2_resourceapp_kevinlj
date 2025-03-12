@@ -7,6 +7,7 @@ import PageTitle from "./assets/components/PageTitle";
 function App() {
   return (
     <>
+      {/*Lagt inn sidene*/}
       <PageTitle />
       <Layout>
         <Routes>
@@ -19,6 +20,8 @@ function App() {
               </>
             }
           />
+          {/*path=":category" er en slug som kommer til å 
+          oppdatere seg basert på hvilken kategori som er trykket på*/}
           <Route
             path=":category"
             element={
