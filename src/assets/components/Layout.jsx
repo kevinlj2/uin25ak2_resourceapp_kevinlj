@@ -1,14 +1,11 @@
+import "../styles/layout.scss";
 import Nav from "./Nav";
 
-export default function Layout() {
+export default function Layout({ children }) {
   return (
     <>
-      <header>
-        <Nav />
-      </header>
-      <main>
-        <section id="textBox"></section>
-      </main>
+      <Nav />
+      <main>{children}</main>
     </>
   );
 }
