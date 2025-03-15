@@ -8,7 +8,6 @@ function App() {
   return (
     <>
       {/*Lagt inn sidene*/}
-      <PageTitle />
       <Layout>
         <Routes>
           <Route

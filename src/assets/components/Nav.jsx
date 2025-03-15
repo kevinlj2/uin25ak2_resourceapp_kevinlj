@@ -7,6 +7,7 @@ export default function Nav() {
     <header>
       <nav>
         <ul>
+          {/* Mapper ut resources for at NavLink skal kunne sende til riktig slug */}
           {resources.map((resource, index) => (
             <li key={index}>
               <NavLink to={`/${resource.category}`} className="navLink">

@@ -5,19 +5,19 @@ import { useParams } from "react-router";
 export default function Resources() {
   const { category } = useParams();
 
-  const filteredResources = resources.filter(
+  // Lager et filter som filtrerer kategoriene
+  const filterResources = resources.filter(
     (resource) => resource.category === category
   );
 
-  console.log(resources);
   return (
     <section>
-      {filteredResources.map((resource, index) => (
+      {filterResources.map((resource, index) => (
         <article key={index}>
           <ul>
             {resource.sources.map((source, idx) => (
               <li key={idx}>
-                <a href={source.url} _target="_blank">
+                <a href={source.url} target="_blank">
                   {source.title}
                 </a>
               </li>
